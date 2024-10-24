@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection{
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  line-height: 1;
+  @apply md:text-8xl text-5xl  tracking-[-0.017em]
+}
+h2 {
+  @apply md:text-7xl text-4xl 
+}
+h3 {
+  @apply text-3xl 
+}
+.b-line {
+  position: relative;
+}
+.b-line::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 5px;
+  left: 0;
+  background: black;
+  position: absolute;
+}
+.hov {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.t-outline {
+  color: white;
+  -webkit-text-stroke: 0.01px black;
+  text-stroke: 0.01px black;
+  @apply z-10
+}
+.hov::before{
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: -1;
+    transition: all 0.3s ease;
+}
+.hov:hover::before{
+  height: 100%;
+}
+.hov:hover{
+  color: white;
+}
+p {
+  @apply text-lg tracking-wide
+}
+.hovB {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 0.5px solid black;
+}
+
+.hovB::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.hovB:hover::before {
+  height: 100%;
+}
+
+.hovB:hover {
+  color: black;
+}
