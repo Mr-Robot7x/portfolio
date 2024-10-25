@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <>
       <header
-        className={`bg-white/60 backdrop-blur-sm w-full py-3 flex justify-center fixed top-0 left-0 z-10`}
+        className={`bg-white/95 w-full py-3 flex justify-center fixed top-0 left-0 z-10`}
       >
         <nav className="w-full px-3 md:w-11/12 flex items-center justify-between">
           <div className="md:w-14 w-11 h-12 relative">

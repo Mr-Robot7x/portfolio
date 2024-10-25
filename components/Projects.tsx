@@ -57,10 +57,10 @@ function Projects() {
               className="md:min-h-[500px] min-h-[400px] overflow-hidden rounded-[40px] relative bg-white z-0"
             >
               <div
-                className={`absolute transition-all ${
+                className={`absolute transition-all drop-shadow-lg ${
                   hovered === index
                     ? "-bottom-1 rounded-t-0 bg-black"
-                    : "-bottom-0 rounded-t-[50px] bg-white/70 backdrop-blur-[7px]"
+                    : "-bottom-0 rounded-t-[50px] bg-white/85"
                 }  duration-300 left-0 w-full h-auto flex flex-col justify-end  z-10 p-5 text-black items-start`}
               >
                 {hovered === index ? null : (
